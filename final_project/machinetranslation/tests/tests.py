@@ -1,5 +1,4 @@
 import unittest
-
 from translator import english_to_french, french_to_english
 
 class TestEnglishToFrench(unittest.TestCase): 
@@ -14,5 +13,5 @@ class TestFrenchToEnglish(unittest.TestCase):
 
         self.assertEqual(french_to_english('Bonjour'), 'Hello')  # test when Bonjour is given Hello should be output
 
-
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
